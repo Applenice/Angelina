@@ -4,11 +4,14 @@
 #### 工具功能🎈  
 ![example](https://github.com/Applenice/Angelina/blob/master/image/example.png)  
 
- - 批量解压ZIP文件，支持将解压后的文件更名为MD5.  
+ - 批量解压ZIP文件，支持将解压后的文件更名为MD5  
 
 #### 应用场景🎯  
 该工具可能应用的场景:  
  - 批量的恶意样本需要解压、更名MD5  
+
+#### 运行环境🔔  
+可直接通过release下载，但只在Windows 10下进行了测试，其他环境不做保证  
 
 #### 打包方式🎁  
 使用Pyinstaller打包成exe，利用[UPX](https://github.com/upx/upx)进行了压缩，虽然也没压缩多少🤣  
@@ -16,5 +19,5 @@
 pyinstaller -F -w --upx-exclude=vcruntime140.dll --upx-exclude=python37.dll --upx-exclude=ucrtbase.dll -i Angelina.ico --add-data="Angelina.ico;." Angelina.py
 ```
 
-#### 备注  
+#### 备注👀  
 1、图片转换工具: https://convertico.com/  
